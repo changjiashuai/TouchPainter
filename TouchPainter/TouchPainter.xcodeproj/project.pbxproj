@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B00401619305C3300522267 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B00401519305C3300522267 /* Vertex.m */; };
+		6B00401919305FA500522267 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B00401819305FA500522267 /* Dot.m */; };
+		6B00401C193062FB00522267 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B00401B193062FB00522267 /* Stroke.m */; };
+		6B00401F193068E600522267 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B00401E193068E600522267 /* CanvasView.m */; };
+		6B00402319306B5000522267 /* MarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B00402219306B5000522267 /* MarkRenderer.m */; };
+		6B004029193083C300522267 /* MarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B004028193083C300522267 /* MarkEnumerator.m */; };
+		6B004032193085D700522267 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B004031193085D700522267 /* NSMutableArray+Stack.m */; };
 		6B0DAE2319304C280094FD87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0DAE2219304C280094FD87 /* Foundation.framework */; };
 		6B0DAE2519304C280094FD87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0DAE2419304C280094FD87 /* CoreGraphics.framework */; };
 		6B0DAE2719304C280094FD87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0DAE2619304C280094FD87 /* UIKit.framework */; };
@@ -19,6 +26,19 @@
 		6B0DAE3E19304C290094FD87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0DAE2619304C280094FD87 /* UIKit.framework */; };
 		6B0DAE4619304C290094FD87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B0DAE4419304C290094FD87 /* InfoPlist.strings */; };
 		6B0DAE4819304C290094FD87 /* TouchPainterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0DAE4719304C290094FD87 /* TouchPainterTests.m */; };
+		6B9A62321935D4BF0026ADCC /* PaperCanasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A62311935D4BF0026ADCC /* PaperCanasView.m */; };
+		6B9A62381935D5FA0026ADCC /* ClothCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A62371935D5FA0026ADCC /* ClothCanvasView.m */; };
+		6B9A623E1935D79C0026ADCC /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A623C1935D79C0026ADCC /* CanvasViewController.m */; };
+		6B9A623F1935D79C0026ADCC /* CanvasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A623D1935D79C0026ADCC /* CanvasViewController.xib */; };
+		6B9A624B1935DA1F0026ADCC /* background_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A62421935DA1F0026ADCC /* background_texture.png */; };
+		6B9A624C1935DA1F0026ADCC /* large_dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A62431935DA1F0026ADCC /* large_dot.png */; };
+		6B9A624D1935DA1F0026ADCC /* open.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A62441935DA1F0026ADCC /* open.png */; };
+		6B9A624E1935DA1F0026ADCC /* palette.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A62451935DA1F0026ADCC /* palette.png */; };
+		6B9A624F1935DA1F0026ADCC /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A62461935DA1F0026ADCC /* placeholder.png */; };
+		6B9A62501935DA1F0026ADCC /* redo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A62471935DA1F0026ADCC /* redo.png */; };
+		6B9A62511935DA1F0026ADCC /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A62481935DA1F0026ADCC /* save.png */; };
+		6B9A62521935DA1F0026ADCC /* small_dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A62491935DA1F0026ADCC /* small_dot.png */; };
+		6B9A62531935DA1F0026ADCC /* undo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B9A624A1935DA1F0026ADCC /* undo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +52,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B00401419305C3300522267 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vertex.h; path = TouchPainter/Vertex.h; sourceTree = "<group>"; };
+		6B00401519305C3300522267 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vertex.m; path = TouchPainter/Vertex.m; sourceTree = "<group>"; };
+		6B00401719305FA500522267 /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dot.h; path = TouchPainter/Dot.h; sourceTree = "<group>"; };
+		6B00401819305FA500522267 /* Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dot.m; path = TouchPainter/Dot.m; sourceTree = "<group>"; };
+		6B00401A193062FB00522267 /* Stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stroke.h; path = TouchPainter/Stroke.h; sourceTree = "<group>"; };
+		6B00401B193062FB00522267 /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Stroke.m; path = TouchPainter/Stroke.m; sourceTree = "<group>"; };
+		6B00401D193068E600522267 /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CanvasView.h; path = TouchPainter/CanvasView.h; sourceTree = "<group>"; };
+		6B00401E193068E600522267 /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CanvasView.m; path = TouchPainter/CanvasView.m; sourceTree = "<group>"; };
+		6B00402019306A9D00522267 /* MarkVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkVisitor.h; sourceTree = "<group>"; };
+		6B00402119306B5000522267 /* MarkRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkRenderer.h; sourceTree = "<group>"; };
+		6B00402219306B5000522267 /* MarkRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkRenderer.m; sourceTree = "<group>"; };
+		6B004027193083C300522267 /* MarkEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkEnumerator.h; sourceTree = "<group>"; };
+		6B004028193083C300522267 /* MarkEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkEnumerator.m; sourceTree = "<group>"; };
+		6B00402D193084D200522267 /* MarkEnumerator_Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkEnumerator_Internal.h; sourceTree = "<group>"; };
+		6B004030193085D700522267 /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		6B004031193085D700522267 /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
 		6B0DAE1F19304C280094FD87 /* TouchPainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchPainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0DAE2219304C280094FD87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B0DAE2419304C280094FD87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +84,23 @@
 		6B0DAE4319304C290094FD87 /* TouchPainterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchPainterTests-Info.plist"; sourceTree = "<group>"; };
 		6B0DAE4519304C290094FD87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6B0DAE4719304C290094FD87 /* TouchPainterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchPainterTests.m; sourceTree = "<group>"; };
+		6B0DAE511930582E0094FD87 /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mark.h; path = TouchPainter/Mark.h; sourceTree = "<group>"; };
+		6B9A62301935D4BF0026ADCC /* PaperCanasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperCanasView.h; sourceTree = "<group>"; };
+		6B9A62311935D4BF0026ADCC /* PaperCanasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperCanasView.m; sourceTree = "<group>"; };
+		6B9A62361935D5FA0026ADCC /* ClothCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothCanvasView.h; sourceTree = "<group>"; };
+		6B9A62371935D5FA0026ADCC /* ClothCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothCanvasView.m; sourceTree = "<group>"; };
+		6B9A623B1935D79C0026ADCC /* CanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		6B9A623C1935D79C0026ADCC /* CanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		6B9A623D1935D79C0026ADCC /* CanvasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CanvasViewController.xib; sourceTree = "<group>"; };
+		6B9A62421935DA1F0026ADCC /* background_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_texture.png; sourceTree = "<group>"; };
+		6B9A62431935DA1F0026ADCC /* large_dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_dot.png; sourceTree = "<group>"; };
+		6B9A62441935DA1F0026ADCC /* open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open.png; sourceTree = "<group>"; };
+		6B9A62451935DA1F0026ADCC /* palette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = palette.png; sourceTree = "<group>"; };
+		6B9A62461935DA1F0026ADCC /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		6B9A62471935DA1F0026ADCC /* redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redo.png; sourceTree = "<group>"; };
+		6B9A62481935DA1F0026ADCC /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		6B9A62491935DA1F0026ADCC /* small_dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_dot.png; sourceTree = "<group>"; };
+		6B9A624A1935DA1F0026ADCC /* undo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +127,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B004024193076A700522267 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6B9A62391935D74E0026ADCC /* View Controllers */,
+				6B0040331930917300522267 /* Views */,
+				6B00402E193085A600522267 /* Utilties */,
+				6B0040261930834200522267 /* Iterator */,
+				6B004025193076B000522267 /* Composite Prototype Iterator */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		6B004025193076B000522267 /* Composite Prototype Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				6B00401419305C3300522267 /* Vertex.h */,
+				6B00401519305C3300522267 /* Vertex.m */,
+				6B00401719305FA500522267 /* Dot.h */,
+				6B00401819305FA500522267 /* Dot.m */,
+				6B00401A193062FB00522267 /* Stroke.h */,
+				6B00401B193062FB00522267 /* Stroke.m */,
+				6B0DAE511930582E0094FD87 /* Mark.h */,
+			);
+			name = "Composite Prototype Iterator";
+			sourceTree = "<group>";
+		};
+		6B0040261930834200522267 /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				6B004027193083C300522267 /* MarkEnumerator.h */,
+				6B004028193083C300522267 /* MarkEnumerator.m */,
+				6B00402D193084D200522267 /* MarkEnumerator_Internal.h */,
+			);
+			name = Iterator;
+			sourceTree = "<group>";
+		};
+		6B00402E193085A600522267 /* Utilties */ = {
+			isa = PBXGroup;
+			children = (
+				6B00402F193085B900522267 /* Custom Stack */,
+			);
+			name = Utilties;
+			sourceTree = "<group>";
+		};
+		6B00402F193085B900522267 /* Custom Stack */ = {
+			isa = PBXGroup;
+			children = (
+				6B004030193085D700522267 /* NSMutableArray+Stack.h */,
+				6B004031193085D700522267 /* NSMutableArray+Stack.m */,
+			);
+			name = "Custom Stack";
+			sourceTree = "<group>";
+		};
+		6B0040331930917300522267 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B00401D193068E600522267 /* CanvasView.h */,
+				6B00401E193068E600522267 /* CanvasView.m */,
+				6B9A62301935D4BF0026ADCC /* PaperCanasView.h */,
+				6B9A62311935D4BF0026ADCC /* PaperCanasView.m */,
+				6B9A62361935D5FA0026ADCC /* ClothCanvasView.h */,
+				6B9A62371935D5FA0026ADCC /* ClothCanvasView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		6B0DAE1619304C280094FD87 = {
 			isa = PBXGroup;
 			children = (
+				6B9A62401935DA1F0026ADCC /* Resources */,
+				6B004024193076A700522267 /* Classes */,
 				6B0DAE2819304C280094FD87 /* TouchPainter */,
 				6B0DAE4119304C290094FD87 /* TouchPainterTests */,
 				6B0DAE2119304C280094FD87 /* Frameworks */,
@@ -111,6 +232,9 @@
 				6B0DAE3219304C280094FD87 /* AppDelegate.m */,
 				6B0DAE3419304C280094FD87 /* Images.xcassets */,
 				6B0DAE2919304C280094FD87 /* Supporting Files */,
+				6B00402019306A9D00522267 /* MarkVisitor.h */,
+				6B00402119306B5000522267 /* MarkRenderer.h */,
+				6B00402219306B5000522267 /* MarkRenderer.m */,
 			);
 			path = TouchPainter;
 			sourceTree = "<group>";
@@ -142,6 +266,48 @@
 				6B0DAE4419304C290094FD87 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B9A62391935D74E0026ADCC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B9A623A1935D75C0026ADCC /* CanvasViewControllers */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6B9A623A1935D75C0026ADCC /* CanvasViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B9A623B1935D79C0026ADCC /* CanvasViewController.h */,
+				6B9A623C1935D79C0026ADCC /* CanvasViewController.m */,
+				6B9A623D1935D79C0026ADCC /* CanvasViewController.xib */,
+			);
+			name = CanvasViewControllers;
+			sourceTree = "<group>";
+		};
+		6B9A62401935DA1F0026ADCC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B9A62411935DA1F0026ADCC /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6B9A62411935DA1F0026ADCC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6B9A62421935DA1F0026ADCC /* background_texture.png */,
+				6B9A62431935DA1F0026ADCC /* large_dot.png */,
+				6B9A62441935DA1F0026ADCC /* open.png */,
+				6B9A62451935DA1F0026ADCC /* palette.png */,
+				6B9A62461935DA1F0026ADCC /* placeholder.png */,
+				6B9A62471935DA1F0026ADCC /* redo.png */,
+				6B9A62481935DA1F0026ADCC /* save.png */,
+				6B9A62491935DA1F0026ADCC /* small_dot.png */,
+				6B9A624A1935DA1F0026ADCC /* undo.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +385,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B9A624E1935DA1F0026ADCC /* palette.png in Resources */,
+				6B9A623F1935D79C0026ADCC /* CanvasViewController.xib in Resources */,
+				6B9A62501935DA1F0026ADCC /* redo.png in Resources */,
+				6B9A624B1935DA1F0026ADCC /* background_texture.png in Resources */,
 				6B0DAE2D19304C280094FD87 /* InfoPlist.strings in Resources */,
+				6B9A62531935DA1F0026ADCC /* undo.png in Resources */,
+				6B9A624C1935DA1F0026ADCC /* large_dot.png in Resources */,
+				6B9A62521935DA1F0026ADCC /* small_dot.png in Resources */,
+				6B9A62511935DA1F0026ADCC /* save.png in Resources */,
+				6B9A624F1935DA1F0026ADCC /* placeholder.png in Resources */,
 				6B0DAE3519304C280094FD87 /* Images.xcassets in Resources */,
+				6B9A624D1935DA1F0026ADCC /* open.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +415,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B9A62321935D4BF0026ADCC /* PaperCanasView.m in Sources */,
+				6B004032193085D700522267 /* NSMutableArray+Stack.m in Sources */,
+				6B004029193083C300522267 /* MarkEnumerator.m in Sources */,
 				6B0DAE3319304C280094FD87 /* AppDelegate.m in Sources */,
+				6B00401C193062FB00522267 /* Stroke.m in Sources */,
+				6B00402319306B5000522267 /* MarkRenderer.m in Sources */,
+				6B00401619305C3300522267 /* Vertex.m in Sources */,
 				6B0DAE2F19304C280094FD87 /* main.m in Sources */,
+				6B9A623E1935D79C0026ADCC /* CanvasViewController.m in Sources */,
+				6B9A62381935D5FA0026ADCC /* ClothCanvasView.m in Sources */,
+				6B00401919305FA500522267 /* Dot.m in Sources */,
+				6B00401F193068E600522267 /* CanvasView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +623,7 @@
 				6B0DAE4D19304C290094FD87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B0DAE4E19304C290094FD87 /* Build configuration list for PBXNativeTarget "TouchPainterTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +632,7 @@
 				6B0DAE5019304C290094FD87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

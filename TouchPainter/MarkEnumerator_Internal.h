@@ -10,4 +10,7 @@
 
 @interface MarkEnumerator ()
 
+- (id) initWithMark:(id <Mark>)mark;
+- (void) traverseAndBuildStackWithMark:(id <Mark>)mark;
+
 @end

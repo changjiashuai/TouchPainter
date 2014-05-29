@@ -1,20 +1,25 @@
 //
-//  CanvansView.m
+//  PaperCanasView.m
 //  TouchPainter
 //
-//  Created by CJS on 14-5-24.
+//  Created by CJS on 14-5-28.
 //  Copyright (c) 2014年 常家帅. All rights reserved.
 //
 
-#import "CanvansView.h"
+#import "PaperCanasView.h"
 
-@implementation CanvansView
+@implementation PaperCanasView
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        // Add a paper image view on top
+        // as the canvas background
+        UIImage *backgroundImage = [UIImage imageNamed:@"paper"];
+        UIImageView *backgroundView = [[UIImageView alloc] initWithImage:backgroundImage];
+        [self addSubview:backgroundView];
+        
     }
     return self;
 }

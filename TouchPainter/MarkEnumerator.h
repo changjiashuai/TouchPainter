@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSMutableArray+Stack.h"
+#import "Mark.h"
 
 @interface MarkEnumerator : NSEnumerator
+{
+    @private
+    NSMutableArray *stack_;
+}
+
+- (NSArray *)allObjects;
+- (id)nextObject;
 
 @end

@@ -10,4 +10,8 @@
 
 @interface NSMutableArray (Stack)
 
+- (void) push:(id)object;
+- (void) dropBottom;
+- (id) pop;
+
 @end

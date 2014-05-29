@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CanvasViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="CanvasView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eG0-NZ-dGX">
+                    <rect key="frame" x="-11" y="524" width="342" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="d5f-q3-FUw"/>
+                        <barButtonItem systemItem="trash" id="jMr-Kw-36p"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="PZ3-Hu-Zhm"/>
+                        <barButtonItem image="save.png" id="Cns-xT-35S"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="zm7-Od-MhS"/>
+                        <barButtonItem image="open.png" id="uqP-hC-goX"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="DfG-t3-9Vi"/>
+                        <barButtonItem image="palette.png" id="UD6-ex-EXC"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="fj1-SE-36G"/>
+                        <barButtonItem image="undo.png" id="eX5-ib-6WX"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="DGw-VB-qCi"/>
+                        <barButtonItem image="redo.png" id="ZPq-AS-NrF"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="B8g-mb-PND"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="open.png" width="24" height="24"/>
+        <image name="palette.png" width="24" height="20"/>
+        <image name="redo.png" width="24" height="24"/>
+        <image name="save.png" width="24" height="24"/>
+        <image name="undo.png" width="24" height="24"/>
+    </resources>
+</document>
