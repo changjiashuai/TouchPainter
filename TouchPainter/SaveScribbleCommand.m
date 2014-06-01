@@ -7,6 +7,7 @@
 //
 
 #import "SaveScribbleCommand.h"
+#import "CoordinatingController.h"
 
 @implementation SaveScribbleCommand
 
