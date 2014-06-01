@@ -22,6 +22,9 @@
 		6B0B45FC193B1B3500A96ABD /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B45FA193B1B3500A96ABD /* ThumbnailViewController.m */; };
 		6B0B45FD193B1B3500A96ABD /* ThumbnailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B0B45FB193B1B3500A96ABD /* ThumbnailViewController.xib */; };
 		6B0B4601193B215200A96ABD /* CommandBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B4600193B215200A96ABD /* CommandBarButton.m */; };
+		6B0B4606193B267300A96ABD /* Scribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B4605193B267300A96ABD /* Scribble.m */; };
+		6B0B4609193B26A900A96ABD /* ScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B4608193B26A900A96ABD /* ScribbleMemento.m */; };
+		6B0B460D193B2EB900A96ABD /* ScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0B460C193B2EB900A96ABD /* ScribbleManager.m */; };
 		6B0DAE2319304C280094FD87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0DAE2219304C280094FD87 /* Foundation.framework */; };
 		6B0DAE2519304C280094FD87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0DAE2419304C280094FD87 /* CoreGraphics.framework */; };
 		6B0DAE2719304C280094FD87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0DAE2619304C280094FD87 /* UIKit.framework */; };
@@ -90,6 +93,13 @@
 		6B0B45FB193B1B3500A96ABD /* ThumbnailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThumbnailViewController.xib; sourceTree = "<group>"; };
 		6B0B45FF193B215200A96ABD /* CommandBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandBarButton.h; sourceTree = "<group>"; };
 		6B0B4600193B215200A96ABD /* CommandBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandBarButton.m; sourceTree = "<group>"; };
+		6B0B4604193B267300A96ABD /* Scribble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scribble.h; sourceTree = "<group>"; };
+		6B0B4605193B267300A96ABD /* Scribble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scribble.m; sourceTree = "<group>"; };
+		6B0B4607193B26A900A96ABD /* ScribbleMemento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleMemento.h; sourceTree = "<group>"; };
+		6B0B4608193B26A900A96ABD /* ScribbleMemento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleMemento.m; sourceTree = "<group>"; };
+		6B0B460A193B27A300A96ABD /* ScribbleMemento_Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleMemento_Friend.h; sourceTree = "<group>"; };
+		6B0B460B193B2EB900A96ABD /* ScribbleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleManager.h; sourceTree = "<group>"; };
+		6B0B460C193B2EB900A96ABD /* ScribbleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleManager.m; sourceTree = "<group>"; };
 		6B0DAE1F19304C280094FD87 /* TouchPainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchPainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0DAE2219304C280094FD87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B0DAE2419304C280094FD87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -152,6 +162,7 @@
 		6B004024193076A700522267 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6B0B4603193B261F00A96ABD /* Memento Observer */,
 				6B0B45EE193B1A0000A96ABD /* Mediator */,
 				6B0B45E7193B101E00A96ABD /* Command */,
 				6B9A62391935D74E0026ADCC /* View Controllers */,
@@ -265,6 +276,20 @@
 				6B0B4600193B215200A96ABD /* CommandBarButton.m */,
 			);
 			name = "Command Button";
+			sourceTree = "<group>";
+		};
+		6B0B4603193B261F00A96ABD /* Memento Observer */ = {
+			isa = PBXGroup;
+			children = (
+				6B0B4604193B267300A96ABD /* Scribble.h */,
+				6B0B4605193B267300A96ABD /* Scribble.m */,
+				6B0B4607193B26A900A96ABD /* ScribbleMemento.h */,
+				6B0B4608193B26A900A96ABD /* ScribbleMemento.m */,
+				6B0B460A193B27A300A96ABD /* ScribbleMemento_Friend.h */,
+				6B0B460B193B2EB900A96ABD /* ScribbleManager.h */,
+				6B0B460C193B2EB900A96ABD /* ScribbleManager.m */,
+			);
+			name = "Memento Observer";
 			sourceTree = "<group>";
 		};
 		6B0DAE1619304C280094FD87 = {
@@ -495,8 +520,10 @@
 			files = (
 				6B0B45F6193B1B1100A96ABD /* PaletteViewController.m in Sources */,
 				6B0B4601193B215200A96ABD /* CommandBarButton.m in Sources */,
+				6B0B4606193B267300A96ABD /* Scribble.m in Sources */,
 				6B0B45ED193B117400A96ABD /* SaveScribbleCommand.m in Sources */,
 				6B9A62321935D4BF0026ADCC /* PaperCanasView.m in Sources */,
+				6B0B460D193B2EB900A96ABD /* ScribbleManager.m in Sources */,
 				6B004032193085D700522267 /* NSMutableArray+Stack.m in Sources */,
 				6B004029193083C300522267 /* MarkEnumerator.m in Sources */,
 				6B0DAE3319304C280094FD87 /* AppDelegate.m in Sources */,
@@ -507,6 +534,7 @@
 				6B0B45FC193B1B3500A96ABD /* ThumbnailViewController.m in Sources */,
 				6B0DAE2F19304C280094FD87 /* main.m in Sources */,
 				6B0B45EA193B107B00A96ABD /* Command.m in Sources */,
+				6B0B4609193B26A900A96ABD /* ScribbleMemento.m in Sources */,
 				6B9A623E1935D79C0026ADCC /* CanvasViewController.m in Sources */,
 				6B9A62381935D5FA0026ADCC /* ClothCanvasView.m in Sources */,
 				6B00401919305FA500522267 /* Dot.m in Sources */,
