@@ -130,6 +130,7 @@
 		6B004024193076A700522267 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6B0B45E7193B101E00A96ABD /* Command */,
 				6B9A62391935D74E0026ADCC /* View Controllers */,
 				6B0040331930917300522267 /* Views */,
 				6B00402E193085A600522267 /* Utilties */,
@@ -191,6 +192,13 @@
 				6B9A62371935D5FA0026ADCC /* ClothCanvasView.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		6B0B45E7193B101E00A96ABD /* Command */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Command;
 			sourceTree = "<group>";
 		};
 		6B0DAE1619304C280094FD87 = {
